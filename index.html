@@ -1,4 +1,4 @@
-<!DOCTYPE hmtl>
+<!DOCTYPE html>
 <html>
 
   <head>
@@ -8,26 +8,100 @@
   </head>
 
   <body>
-    <div class="banner">
-        <img src="saitama.png" alt="Placeholder meme">
+    <div class="items">
+      <div class="banner">
+        <img src="saitama.png" alt="Placeholder meme" class="banner-image">
+     </div>
+
+      <div class="name">
+        Daisy Chew
+      </div>
+
+      <div class="social-icons">
+       <a href="https://github.com/daisychew" target="_blank">
+         GitHub
+       </a>
+
+       <a href="https://www.linkedin.com/in/daisy-c-838619230/" target="_blank">
+          LinkedIn
+       </a>
+      </div>
+
+      <div class="link">
+        <img
+          src="api.jpg" class="thumbnail">
+
+        <a target="_blank" href="https://stopaapihate.org/report-hate/">How to Report an AAPI Hate Crime</a>
+      </div>
+
+      <div class="link">
+        <img
+          src="palestine.jpg" class="thumbnail">
+
+        <a target="_blank" href="https://remix.aljazeera.com/aje/PalestineRemix/timeline_main.html">Interactive history of Palestine</a>
+      </div>
     </div>
-
-    <div class="social-icons">
-      <a href="https://github.com/daisychew" target="_blank">
-        GitHub
-      </a>
-
-      <a href="https://www.linkedin.com/in/daisy-c-838619230/" target="_blank">
-        LinkedIn
-      </a>
-    </div>
-
-    <div class="link">
-      <img
-        src="api.jpg">
-
-      <a target="_blank" href="https://stopaapihate.org/report-hate/">How to Report an AAPI Hate Crime</a>
-    </div>
-
   </body>
+
+  <style>
+    body {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color:#232946;
+      display: flex;
+      justify-content: center;
+    }
+
+    .name {
+      color: #fffffe;
+      display: flex;
+      justify-content: center;
+    }
+
+    .banner {
+      display: flex;
+      justify-content: center;
+    }
+
+    .social-icons a {
+      color: #b8c1ec;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .link {
+      background-color: #eebbc3;
+      display: flex;
+      align-items: center;
+    }
+
+    .link a {
+      color: #232946;
+      text-decoration: none;
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .banner-image {
+      width: 190px;
+      height: 140px;
+      object-fit: cover; 
+    }
+
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+      border-radius: 48px;
+      object-fit: cover;
+    }
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 600px;
+      flex-grow: 1;
+    }
+  </style>
 </html>
